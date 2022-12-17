@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-backend "remote" {
+  backend "remote" {
     organization = "akin35"
     workspaces {
         name = "week3"
     }
-}
+  }
 }
 
 # Configure the Microsoft Azure Provider
