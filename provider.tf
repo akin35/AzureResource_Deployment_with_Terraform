@@ -11,7 +11,9 @@ terraform {
 backend "remote" {
     organization = "akin123"
 
-    workspace = 
+    workspaces {
+        name = "dev-api"
+    }
 }
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
