@@ -7,14 +7,15 @@ terraform {
       version = "=3.0.0"
     }
   }
-}
-backend "remote" {
-    organization = "akin123"
 
+backend "remote" {
+    organization = "akin35"
     workspaces {
-        name = "dev-api"
+        name = "week3"
     }
 }
+}
+
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
